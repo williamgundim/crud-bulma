@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/bulma.css">
+</head>
+
+<body class="container">
+    
+    <form class="form">
+    
+            <div class="content" id="cadastro">
+
+                <div class="notification is-success">
+                    <button class="delete"></button>
+                    Cadastrado com sucesso!
+                </div>
+
+                <!--Nome-->
+                <div class="field" id="nome">
+                    <label class="label">Nome</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Digite o nome">
+                    </div>
+                </div>
+
+                <!--Genero-->
+                <div class="field" id="genero">
+                    <label class="label">Gênero</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Data Nascimento-->
+                <div class="field" id="nome">
+                    <label class="label">Data de Nascimento</label>
+                    <div class="control">
+                        <input class="input" type="date">
+                    </div>
+                </div>
+
+                <!--Celular-->
+                <div class="field" id="celular">
+                    <p class="control has-icons-left has-icons-right">
+                        <label class="label">Celular</label>
+                        <div class="field has-addons">
+                            <p class="control">
+                                <a class="button is-static">+11</a>
+                            </p>
+                        </div>
+                    </p>
+                
+                    </div>
+                </div>
+                    
+                <!--Whatsapp-->
+                <div class="field horizontal" id="whatsapp">
+                    <label class="label">Whatsapp</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Sim</option>
+                                <option>Não</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Telefone Residencial-->
+                <div class="field" id="celular">
+                    <label class="label">Telefone Residencial</label>
+                    <div class="field has-addons">
+                        <p class="control">
+                            <a class="button is-static">+11</a>
+                        </p>
+                        <p class="control is-expanded">
+                            <input class="input" type="tel" placeholder="Telefone" required>
+                        </p>
+                    </div>
+                </div>
+
+                <!--CEP-->
+                <div class="field">
+                    <label class="label">CEP</label>
+                    <input class="input is-danger" id="cadastro_cep" type="text" placeholder="CEP" onchange=ValidCEP()>
+                    <p class="help is-danger">CEP inválido</p>
+                </div>
+
+                <!--Endereço|Número-->
+                <div class="field is-grouped" >
+                    <div class="control">
+                        <label class="label">Endereço</label>
+                        <input class="input" type="text" placeholder="Ex.: Av. Paulo Faccini">
+                    </div>
+                    <div class="control">
+                        <label class="label">Número</label>
+                        <input class="input" type="text" placeholder="999">
+                    </div>
+                </div>
+
+                <!--Endereço|Número-->
+                <div class="field is-grouped">
+                    <div class="control">
+                        <label class="label">Cidade</label>
+                        <input class="input" type="text" placeholder="Guarulhos">
+                    </div>
+                    <div class="control">
+                            <label class="label">Bairro</label>
+                            <input class="input" type="text" placeholder="Centro">
+                        </div>
+                    <div class="control">
+                        <label class="label">Estado</label>
+                        <input class="input" type="text" placeholder="SP">  
+                    </div>
+                </div>
+
+                <!--Complemento-->
+                <div class="field" id="nome">
+                    <label class="label">Complemento</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ex.: Ap. 20 Bloco C">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Observação</label>
+                    <div class="field-body">
+                        <div class="field">
+                        <div class="control">
+                            <textarea class="textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <br><br> 
+                <a class="button is-large is-fullwidth is-success" onclick="model.adiciona(event)">Cadastrar</a>
+            
+            </div>
+            
+    </form>
+ 
+    <br>
+    <br>
+    <script src="model/Utils.js"></script>
+    <script src="model/Pessoas.js"></script>
+    <script>  
+        let model = new Pessoas();   
+    </script>    
+</body>
+</html>
