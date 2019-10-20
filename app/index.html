@@ -48,53 +48,44 @@
 
                 <div id="notificationUser">
                 </div>
+   
+                <div class="hero-body">
+                    <div class="is-full">
 
-                <div class="field is-grouped">
-                    
-                    <!--Telefone Residencial-->
-                    <div class="control">
-                        <label class="label is-large">Telefone Residencial</label>
-                        <div class="field has-addons">
-                            <p class="control">
-                                <a class="button is-static is-large">11</a>
-                            </p>
-                            <p class="control is-expanded">
-                                <input class="input is-large" type="tel" placeholder="Telefone" required id="telefone">
-                            </p>
+                        <!--Telefone Residencial-->
+                        <div class="control">
+                            <label class="label is-size-3">Telefone Residencial</label>
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <a class="button is-static is-size-3">11</a>
+                                </p>
+                                <p class="control is-expanded">
+                                    <input class="input is-size-3" type="tel" placeholder="Telefone" required id="telefone">
+                                </p>
+                            </div>
                         </div>
+
+                        <!--Celular-->
+                        <div class="control">
+                            <label class="label is-size-3">Telefone Celular</label>
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <a class="button is-static is-size-3">11</a>
+                                </p>
+                                <p class="control is-expanded">
+                                    <input class="input is-size-3" type="tel" placeholder="Celular" required id="celular">
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <!--Celular-->
-                    <div class="control">
-                        <label class="label is-large">Telefone Celular</label>
-                        <div class="field has-addons">
-                            <p class="control">
-                                <a class="button is-static is-large">11</a>
-                            </p>
-                            <p class="control is-expanded">
-                                <input class="input is-large" type="tel" placeholder="Celular" required id="celular">
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--Whatsapp-->
-                    <div class="control" id="whatsapp">
-                        <label class="label is-large">Whatsapp</label>
-                        <div class="select is-large">
-                            <select>
-                                <option>Sim</option>
-                                <option>Não</option>
-                            </select>
-                        </div>
-                    </div>
-
-                </div>   
 
                 <!--Nome-->
                 <div class="field">
-                    <label class="label is-large">Nome Completo</label>
+                    <label class="label is-size-3">Nome Completo</label>
                     <div class="control" >
-                        <input class="input is-large" type="text" placeholder="Digite o nome" id="nome">
+                        <input class="input is-size-3" type="text" placeholder="Digite o nome" id="nome">
                     </div>
                 </div>
 
@@ -102,14 +93,26 @@
                     
                     <!--Data Nascimento-->
                     <div class="control is-expanded" >
-                        <label class="label is-large">Data de Nascimento</label>
-                        <input class="input is-large" type="number" id="dtnasc">
+                        <label class="label is-size-3">Data de Nascimento</label>
+                        <input class="input is-size-3" type="date" id="dtnasc">
+                    </div>
+
+                     
+                    <!--Whatsapp-->
+                    <div class="control" id="whatsapp">
+                        <label class="label is-size-3">Whatsapp</label>
+                        <div class="select is-size-3">
+                            <select>
+                                <option>Sim</option>
+                                <option>Não</option>
+                            </select>
+                        </div>
                     </div>
 
                     <!--Genero-->
                     <div class="control" id="genero">
-                        <label class="label is-large">Gênero</label>
-                        <div class="select is-large">
+                        <label class="label is-size-3">Gênero</label>
+                        <div class="select is-size-3">
                             <select>
                                 <option>Masculino</option>
                                 <option>Feminino</option>
@@ -125,19 +128,19 @@
                     
                     <!--CEP-->
                     <div class="field">
-                        <label class="label is-large">CEP</label>
-                        <input class="input is-large" id="cep" type="number" placeholder="CEP" onchange=ValidCEP()>
+                        <label class="label is-size-3">CEP</label>
+                        <input class="input is-size-3" id="cep" type="number" placeholder="CEP" onchange=ValidCEP()>
                     </div>
 
                     <div class="control is-expanded">
-                        <label class="label is-large">Cidade</label>
-                        <input class="input is-large" type="text" placeholder="Guarulhos" id="cidade">
+                        <label class="label is-size-3">Cidade</label>
+                        <input class="input is-size-3" type="text" placeholder="Guarulhos" id="cidade">
                     </div>
 
                     <div class="control" id="estado">
-                        <label class="label is-large">Estado</label>
+                        <label class="label is-size-3">Estado</label>
                         <div class="control">
-                            <div class="select is-large" id="itensestado">
+                            <div class="select is-size-3" id="itensestado">
                             </div>
                         </div>
                     </div>
@@ -146,34 +149,34 @@
 
                 <!--Endereço-->
                 <div class="control is-expanded">
-                    <label class="label is-large">Endereço</label>
-                    <input class="input is-large" type="text" placeholder="Ex.: Av. Paulo Faccini" id="endereco">
+                    <label class="label is-size-3">Endereço</label>
+                    <input class="input is-size-3" type="text" placeholder="Ex.: Av. Paulo Faccini" id="endereco">
                 </div>
 
                 <!--Bairro|Número-->
                 
                 <div class="field is-grouped">
                     <div class="control is-expanded">
-                            <label class="label is-large">Bairro</label>
-                            <input class="input is-large" type="text" placeholder="Centro" id="bairro">
+                        <label class="label is-size-3">Bairro</label>
+                        <input class="input is-size-3" type="text" placeholder="Centro" id="bairro">
                     </div>
                     <div class="control">
-                        <label class="label is-large">Número</label>
-                        <input class="input is-large" type="number" placeholder="999" id="numero">
+                        <label class="label is-size-3">Número</label>
+                        <input class="input is-size-3" type="number" placeholder="999" id="numero">
                     </div>
                 </div>
 
                 <!--Complemento-->             
                 <div class="field control is-expanded" id="nome">
-                    <label class="label is-large">Complemento</label>
+                    <label class="label is-size-3">Complemento</label>
                     <div class="control" id="complemento">
-                        <input class="input is-large" type="text" placeholder="Ex.: Ap. 20 Bloco C">
+                        <input class="input is-size-3" type="text" placeholder="Ex.: Ap. 20 Bloco C">
                     </div>
                 </div>
 
                 <div class="field">
-                    <label class="label is-large">Observação</label>
-                    <div class="field-body is-large">
+                    <label class="label is-size-3">Observação</label>
+                    <div class="field-body is-size-3">
                         <div class="field">
                         <div class="control" id="obs">
                             <textarea class="textarea"></textarea>
@@ -181,7 +184,7 @@
                     </div>
                 </div>
                 <br><br> 
-                <a class="button is-primary is-large is-fullwidth is-info" onclick="app.adiciona(event)">Cadastrar</a>
+                <a class="button is-primary is-size-1 is-fullwidth is-info" onclick="app.adiciona(event)">Cadastrar</a>
             
             </div>
             
@@ -193,6 +196,7 @@
     <script src="model/Utils.js"></script>
     <script src="model/appController.js"></script>
     <script src="View/View.js"></script>
+    <script src="model/commit.js"></script>
         <!-- Adicionando JQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

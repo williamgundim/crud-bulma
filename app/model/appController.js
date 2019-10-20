@@ -3,17 +3,17 @@ class appController{
     constructor(){
 
         this._Nome          = $("#nome");
-        this._Genero        = $("#genero"); 
+        this._Genero        = $("#genero option:selected"); 
         this._DtNasc        = $("#dtnasc");
         this._Celular       = $("#celular");
-        this._Whatsapp      = $("#whatsapp");
+        this._Whatsapp      = $("#whatsapp option:selected");
         this._Telefone      = $("#telefone");
         this._CEP           = $("#cep");
         this._Endereco      = $("#endereco");
         this._EndNum        = $("#numero");
         this._Cidade        = $("#cidade");
         this._Bairro        = $("#bairro");
-        this._Estado        = $("#estado");
+        this._Estado        = $("#itensestado option:selected");
         this._Complemento   = $("#complemento");
         this._Observacao    = $("#obs");
 
@@ -21,8 +21,11 @@ class appController{
     }
 
     adiciona(event){
-
+        
         event.preventDefault();
+
+        //post
+        CommitData(this);
 
         if (this.validForm()){
 
